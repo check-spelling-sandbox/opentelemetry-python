@@ -989,7 +989,7 @@ class SpanAttributes:
         "aws.dynamodb.global_secondary_index_updates"
     )
     """
-    The JSON-serialized value of each item in the the `GlobalSecondaryIndexUpdates` request field.
+    The JSON-serialized value of each item in the `GlobalSecondaryIndexUpdates` request field.
     """
 
     AWS_S3_BUCKET = "aws.s3.bucket"
