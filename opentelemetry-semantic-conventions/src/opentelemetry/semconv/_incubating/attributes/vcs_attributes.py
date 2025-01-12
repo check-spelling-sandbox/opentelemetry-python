@@ -29,7 +29,7 @@ The state of the change (pull request/merge request/changelist).
 
 VCS_CHANGE_TITLE: Final = "vcs.change.title"
 """
-The human readable title of the change (pull request/merge request/changelist). This title is often a brief summary of the change and may get merged in to a ref as the commit summary.
+The human readable title of the change (pull request/merge request/changelist). This title is often a brief summary of the change and may get merged into a ref as the commit summary.
 """
 
 VCS_LINE_CHANGE_TYPE: Final = "vcs.line_change.type"
