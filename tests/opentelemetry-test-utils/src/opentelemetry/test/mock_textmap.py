@@ -27,7 +27,7 @@ from opentelemetry.propagators.textmap import (
 
 
 class NOOPTextMapPropagator(TextMapPropagator):
-    """A propagator that does not extract nor inject.
+    """A propagator that neither extracts nor injects.
 
     This class is useful for catching edge cases assuming
     a SpanContext will always be present.
