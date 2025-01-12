@@ -82,7 +82,7 @@ class TestLogarithmMapping(TestCase):
         # The exponentiation factor for this logarithm exponent histogram
         # mapping is square_root(2).
         # Scale 1 means 1 division between every power of two, having
-        # a factor sqare_root(2) times the lower boundary.
+        # a factor square_root(2) times the lower boundary.
         logarithm_exponent_histogram_mapping = LogarithmMapping(1)
 
         self.assertEqual(logarithm_exponent_histogram_mapping.scale, 1)
