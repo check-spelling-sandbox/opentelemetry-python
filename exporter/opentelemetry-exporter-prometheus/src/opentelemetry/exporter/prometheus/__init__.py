@@ -224,7 +224,7 @@ class _CustomCollector:
                     metrics.append(metric)
 
         for metric in metrics:
-            label_valuess = []
+            label_values_list = []
             values = []
 
             pre_metric_family_ids = []
@@ -254,7 +254,7 @@ class _CustomCollector:
                     )
                 )
 
-                label_valuess.append(label_values)
+                label_values_list.append(label_values)
                 if isinstance(number_data_point, HistogramDataPoint):
                     values.append(
                         {
@@ -269,7 +269,7 @@ class _CustomCollector:
                     values.append(number_data_point.value)
 
             for pre_metric_family_id, label_values, value in zip(
-                pre_metric_family_ids, label_valuess, values
+                pre_metric_family_ids, label_values_list, values
             ):
                 is_non_monotonic_sum = (
                     isinstance(metric.data, Sum)
