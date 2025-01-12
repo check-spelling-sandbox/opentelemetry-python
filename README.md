@@ -20,7 +20,7 @@ Project versioning information and stability guarantees can be found [here](./ra
 
 ## Getting started
 
-You can find the getting started guide for OpenTelemetry Python [here](https://opentelemetry.io/docs/instrumentation/python/getting-started/).
+See the [OpenTelemetry Python getting started guide](https://opentelemetry.io/docs/instrumentation/python/getting-started/).
 
 If you are looking for **examples** on how to use the OpenTelemetry API to
 instrument your code manually, or how to set up the OpenTelemetry
