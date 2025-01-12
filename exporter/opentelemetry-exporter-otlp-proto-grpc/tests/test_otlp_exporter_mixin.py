@@ -45,7 +45,7 @@ class TestOTLPExporterMixin(TestCase):
             "os.environ",
             {
                 "test_gzip": "gzip",
-                "test_gzip_caseinsensitive_with_whitespace": " GzIp ",
+                "test_gzip_case_insensitive_with_whitespace": " GzIp ",
                 "test_invalid": "some invalid compression",
             },
         ):
@@ -54,7 +54,7 @@ class TestOTLPExporterMixin(TestCase):
             )
             self.assertEqual(
                 environ_to_compression(
-                    "test_gzip_caseinsensitive_with_whitespace"
+                    "test_gzip_case_insensitive_with_whitespace"
                 ),
                 Compression.Gzip,
             )
