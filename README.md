@@ -16,7 +16,7 @@ See the [OpenTelemetry Instrumentation for Python](https://opentelemetry.io/docs
 | Metrics | Stable       | N/A     |
 | Logs    | Experimental | N/A     |
 
-Project versioning information and stability guarantees can be found [here](./rationale.md#versioning-and-releasing).
+For more information, see the project [versioning and releasing](./rationale.md#versioning-and-releasing) section for stability guarantees.
 
 ## Getting started
 
