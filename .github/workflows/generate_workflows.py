@@ -141,7 +141,7 @@ def _generate_workflow(
     output_dir: Path,
     max_jobs: int = 250,
 ):
-    # Github seems to limit the amount of jobs in a workflow file, that is why
+    # GitHub seems to limit the amount of jobs in a workflow file, that is why
     # they are split in groups of 250 per workflow file.
     for file_number, job_datas in enumerate(
         [

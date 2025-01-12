@@ -37,7 +37,7 @@
   * Press the "Run workflow" button, then select the release branch from the dropdown list,
     e.g. `release/v1.9.x`, and click the "Run workflow" button below that.
   * This workflow will publish the artifacts and publish a GitHub release with release notes based on the change log.
-  * Verify that a new [Github release](https://github.com/open-telemetry/opentelemetry-python/releases) has been created and that the CHANGELOGs look correct.
+  * Verify that a new [GitHub release](https://github.com/open-telemetry/opentelemetry-python/releases) has been created and that the CHANGELOGs look correct.
 
 ## After the release
 
