@@ -55,7 +55,7 @@ class TestParseHeaders(unittest.TestCase):
                 True,
             ),
             (
-                "=name=valu3; key1; key2, content  =  application, red=\tvelvet; cake",
+                "=name=value3; key1; key2, content  =  application, red=\tvelvet; cake",
                 [("content", "application")],
                 True,
             ),
