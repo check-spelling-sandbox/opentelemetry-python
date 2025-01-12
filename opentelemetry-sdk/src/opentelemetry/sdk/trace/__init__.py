@@ -564,7 +564,7 @@ class ReadableSpan:
 
 
 class SpanLimits:
-    """The limits that should be enforced on recorded data such as events, links, attributes etc.
+    """The limits that should be enforced on recorded data such as events, links, attributes, etc.
 
     This class does not enforce any limits itself. It only provides a way to read limits from env,
     default values and from user provided arguments.
