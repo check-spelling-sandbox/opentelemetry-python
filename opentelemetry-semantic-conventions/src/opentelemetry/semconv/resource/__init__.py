@@ -92,7 +92,7 @@ class ResourceAttributes:
     * **GCP:** The [URI of the resource](https://cloud.google.com/iam/docs/full-resource-names)
     * **Azure:** The [Fully Qualified Resource ID](https://docs.microsoft.com/en-us/rest/api/resources/resources/get-by-id) of the invoked function,
       *not* the function app, having the form
-      `/subscriptions/<SUBSCIPTION_GUID>/resourceGroups/<RG>/providers/Microsoft.Web/sites/<FUNCAPP>/functions/<FUNC>`.
+      `/subscriptions/<SUBSCRIPTION_GUID>/resourceGroups/<RG>/providers/Microsoft.Web/sites/<FUNCAPP>/functions/<FUNC>`.
       This means that a span attribute MUST be used, as an Azure function app can host multiple functions that would usually share
       a TracerProvider.
     """
