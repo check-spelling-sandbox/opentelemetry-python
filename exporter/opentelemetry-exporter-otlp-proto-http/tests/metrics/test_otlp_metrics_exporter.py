@@ -99,7 +99,7 @@ class TestOTLPMetricExporter(TestCase):
                                 scope=SDKInstrumentationScope(
                                     name="first_name",
                                     version="first_version",
-                                    schema_url="insrumentation_scope_schema_url",
+                                    schema_url="instrumentation_scope_schema_url",
                                 ),
                                 metrics=[_generate_sum("sum_int", 33)],
                                 schema_url="instrumentation_scope_schema_url",
