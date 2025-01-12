@@ -117,8 +117,7 @@ with a specific git commit hash by setting an environment variable before runnin
 CONTRIB_REPO_SHA=dde62cebffe519c35875af6d06fae053b3be65ec tox
 ```
 
-The continuation integration overrides that environment variable with as per the configuration
-[here](https://github.com/open-telemetry/opentelemetry-python/blob/main/.github/workflows/test_0.yml#L14).
+The [continuous integration overrides that environment variable](https://github.com/open-telemetry/opentelemetry-python/blob/82279e4dbabc296f2f2e2377d01e822c2d2bef62/.github/workflows/test_0.yml#L14).
 
 ### Benchmarks
 
