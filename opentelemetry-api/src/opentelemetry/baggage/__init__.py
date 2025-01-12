@@ -30,7 +30,7 @@ _logger = getLogger(__name__)
 
 _KEY_PATTERN = compile(_KEY_FORMAT)
 _VALUE_PATTERN = compile(_VALUE_FORMAT)
-_PROPERT_PATTERN = compile(_BAGGAGE_PROPERTY_FORMAT)
+_PROPERTY_PATTERN = compile(_BAGGAGE_PROPERTY_FORMAT)
 
 
 def get_all(
@@ -122,7 +122,7 @@ def _is_valid_value(value: object) -> bool:
     is_valid_value = _VALUE_PATTERN.fullmatch(parts[0]) is not None
     if len(parts) > 1:  # one or more properties metadata
         for property in parts[1:]:
-            if _PROPERT_PATTERN.fullmatch(property) is None:
+            if _PROPERTY_PATTERN.fullmatch(property) is None:
                 is_valid_value = False
                 break
     return is_valid_value
