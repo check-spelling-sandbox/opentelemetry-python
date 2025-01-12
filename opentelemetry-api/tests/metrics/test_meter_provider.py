@@ -234,7 +234,7 @@ class TestProxy(MetricsGlobalsTest, TestCase):
                 name, callbacks=[callback], unit=unit, description=description
             )
         )
-        proxy_overvable_gauge = proxy_meter.create_observable_gauge(
+        proxy_observable_gauge = proxy_meter.create_observable_gauge(
             name, callbacks=[callback], unit=unit, description=description
         )
         self.assertIsInstance(proxy_counter, _ProxyCounter)
@@ -247,7 +247,7 @@ class TestProxy(MetricsGlobalsTest, TestCase):
         self.assertIsInstance(
             proxy_observable_updowncounter, _ProxyObservableUpDownCounter
         )
-        self.assertIsInstance(proxy_overvable_gauge, _ProxyObservableGauge)
+        self.assertIsInstance(proxy_observable_gauge, _ProxyObservableGauge)
 
         # Synchronous proxy instruments should be usable
         amount = 12
