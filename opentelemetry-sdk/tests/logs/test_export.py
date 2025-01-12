@@ -537,9 +537,9 @@ class TestBatchLogRecordProcessor(ConcurrencyTestBase):
             logger.critical("Log no: %s", log_no)
 
         self.assertTrue(log_record_processor.force_flush())
-        finised_logs = exporter.get_finished_logs()
-        self.assertEqual(len(finised_logs), 1000)
-        for item in finised_logs:
+        finished_logs = exporter.get_finished_logs()
+        self.assertEqual(len(finished_logs), 1000)
+        for item in finished_logs:
             self.assertEqual(item.instrumentation_scope.name, "many_logs")
 
     def test_with_multiple_threads(self):
