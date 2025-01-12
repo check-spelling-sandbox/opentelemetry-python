@@ -42,12 +42,12 @@ class TestMapping(TestCase):
             sanitize_full_name("1leading_digit"), "_leading_digit"
         )
         self.assertEqual(
-            sanitize_full_name("consective_____underscores"),
-            "consective_underscores",
+            sanitize_full_name("consecutive_____underscores"),
+            "consecutive_underscores",
         )
         self.assertEqual(
-            sanitize_full_name("1_~#consective_underscores"),
-            "_consective_underscores",
+            sanitize_full_name("1_~#consecutive_underscores"),
+            "_consecutive_underscores",
         )
         self.assertEqual(
             sanitize_full_name("1!2@3#4$5%6^7&8*9(0)_-"),
@@ -77,8 +77,8 @@ class TestMapping(TestCase):
             sanitize_attribute("1leading_digit"), "_leading_digit"
         )
         self.assertEqual(
-            sanitize_attribute("1_~#consective_underscores"),
-            "_consective_underscores",
+            sanitize_attribute("1_~#consecutive_underscores"),
+            "_consecutive_underscores",
         )
         self.assertEqual(
             sanitize_attribute("1!2@3#4$5%6^7&8*9(0)_-"),
