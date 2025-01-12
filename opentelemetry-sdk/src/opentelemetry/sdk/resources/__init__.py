@@ -396,7 +396,7 @@ class OsResourceDetector(ResourceDetector):
     """Detect os resources based on `Operating System conventions <https://opentelemetry.io/docs/specs/semconv/resource/os/>`_."""
 
     def detect(self) -> "Resource":
-        """Returns a resource with with ``os.type`` and ``os.version``.
+        """Returns a resource with ``os.type`` and ``os.version``.
 
         Python's platform library
         ~~~~~~~~~~~~~~~~~~~~~~~~~
