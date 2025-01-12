@@ -416,7 +416,7 @@ class OsResourceDetector(ResourceDetector):
             '#35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May  7 09:00:52 UTC 2'
 
         .. code-block:: python
-            :caption: MacOS
+            :caption: macOS
 
             >>> platform.system()
             'Darwin'
