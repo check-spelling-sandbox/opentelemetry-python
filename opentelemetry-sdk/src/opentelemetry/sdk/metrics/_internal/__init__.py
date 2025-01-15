@@ -541,7 +541,7 @@ class MeterProvider(APIMeterProvider):
 
         if self._shutdown:
             _logger.warning(
-                "A shutdown `MeterProvider` can not provide a `Meter`"
+                "A shutdown `MeterProvider` cannot provide a `Meter`"
             )
             return NoOpMeter(name, version=version, schema_url=schema_url)
 

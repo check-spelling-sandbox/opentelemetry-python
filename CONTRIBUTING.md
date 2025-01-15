@@ -32,7 +32,7 @@ Slack and find a buddy!
 and say you are looking for a buddy. We will match you with someone who has experience in that area.
 
 The Slack channel will be used for introductions and an entry point for external people to be triaged and redirected. For
-discussions, please open up an issue or a Github [Discussion](https://github.com/open-telemetry/opentelemetry-python/discussions).
+discussions, please open up an issue or a GitHub [Discussion](https://github.com/open-telemetry/opentelemetry-python/discussions).
 
 Your OpenTelemetry buddy is your resource to talk to directly on all aspects of contributing to OpenTelemetry: providing
 context, reviewing PRs, and helping those get merged. Buddies will not be available 24/7, but is committed to responding
@@ -117,8 +117,7 @@ with a specific git commit hash by setting an environment variable before runnin
 CONTRIB_REPO_SHA=dde62cebffe519c35875af6d06fae053b3be65ec tox
 ```
 
-The continuation integration overrides that environment variable with as per the configuration
-[here](https://github.com/open-telemetry/opentelemetry-python/blob/main/.github/workflows/test_0.yml#L14).
+The [continuous integration overrides that environment variable](https://github.com/open-telemetry/opentelemetry-python/blob/82279e4dbabc296f2f2e2377d01e822c2d2bef62/.github/workflows/test_0.yml#L14).
 
 ### Benchmarks
 
@@ -231,11 +230,11 @@ that it can be merged. Allowing maintainers to edit your PR also allows them to 
 get your PR merged by making any minor fixes to solve any issue that while being unrelated
 to your PR, can still happen.
 
-#### Fork from a personal Github account
+#### Fork from a personal GitHub account
 
-Right now Github [does not allow](https://github.com/orgs/community/discussions/5634) PRs
-to be edited by maintainers if the corresponding repo fork exists in a Github organization.
-Please for this repo in a personal Github account instead.
+Right now GitHub [does not allow](https://github.com/orgs/community/discussions/5634) PRs
+to be edited by maintainers if the corresponding repo fork exists in a GitHub organization.
+Please for this repo in a personal GitHub account instead.
 
 One of the maintainers will merge the PR once it is **ready to merge**.
 

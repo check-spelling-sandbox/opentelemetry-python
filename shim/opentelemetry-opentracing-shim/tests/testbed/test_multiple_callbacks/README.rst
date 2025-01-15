@@ -10,7 +10,7 @@ Implementation details:
 
 
 * For ``threading``, a thread-safe counter is put in each ``Span`` to keep track of the pending callbacks, and call ``Span.finish()`` when the count becomes 0.
-* For ``asyncio`` the children corotuines representing the subtasks are simply yielded over, so no counter is needed.
+* For ``asyncio`` the children coroutines representing the subtasks are simply yielded over, so no counter is needed.
 
 ``threading`` implementation:
 
@@ -38,7 +38,7 @@ Implementation details:
            with self.tracer.start_active_span("task"):
                await asyncio.sleep(interval)
 
-       # Invoke and yield over the corotuines.
+       # Invoke and yield over the coroutines.
        with self.tracer.start_active_span("parent"):
        tasks = self.submit_callbacks()
        await asyncio.gather(*tasks)

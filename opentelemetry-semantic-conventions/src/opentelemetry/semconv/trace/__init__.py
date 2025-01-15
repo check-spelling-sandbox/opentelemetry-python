@@ -197,7 +197,7 @@ class SpanAttributes:
     (this list MUST be a full override of the default known method, it is not a list of known methods in addition to the defaults).
 
     HTTP method names are case-sensitive and `http.request.method` attribute value MUST match a known HTTP method name exactly.
-    Instrumentations for specific web frameworks that consider HTTP methods to be case insensitive, SHOULD populate a canonical equivalent.
+    Instrumentations for specific web frameworks that consider HTTP methods to be case-insensitive, SHOULD populate a canonical equivalent.
     Tracing instrumentations that do so, MUST also set `http.request.method_original` to the original value.
     """
 
@@ -603,7 +603,7 @@ class SpanAttributes:
     * **GCP:** The [URI of the resource](https://cloud.google.com/iam/docs/full-resource-names)
     * **Azure:** The [Fully Qualified Resource ID](https://docs.microsoft.com/en-us/rest/api/resources/resources/get-by-id) of the invoked function,
       *not* the function app, having the form
-      `/subscriptions/<SUBSCIPTION_GUID>/resourceGroups/<RG>/providers/Microsoft.Web/sites/<FUNCAPP>/functions/<FUNC>`.
+      `/subscriptions/<SUBSCRIPTION_GUID>/resourceGroups/<RG>/providers/Microsoft.Web/sites/<FUNCAPP>/functions/<FUNC>`.
       This means that a span attribute MUST be used, as an Azure function app can host multiple functions that would usually share
       a TracerProvider.
     """
@@ -989,7 +989,7 @@ class SpanAttributes:
         "aws.dynamodb.global_secondary_index_updates"
     )
     """
-    The JSON-serialized value of each item in the the `GlobalSecondaryIndexUpdates` request field.
+    The JSON-serialized value of each item in the `GlobalSecondaryIndexUpdates` request field.
     """
 
     AWS_S3_BUCKET = "aws.s3.bucket"

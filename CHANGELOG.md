@@ -115,7 +115,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   ([#4009](https://github.com/open-telemetry/opentelemetry-python/pull/4009))
 - Fix `start_time_unix_nano` for delta collection for sum aggregation
   ([#4011](https://github.com/open-telemetry/opentelemetry-python/pull/4011))
-- Update opentracing and opencesus docs examples to not use JaegerExporter
+- Update opentracing and opencensus docs examples to not use JaegerExporter
   ([#4023](https://github.com/open-telemetry/opentelemetry-python/pull/4023))
 - Do not execute Flask Tests in debug mode
   ([#3956](https://github.com/open-telemetry/opentelemetry-python/pull/3956))
@@ -820,7 +820,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Updated `opentelementry-opentracing-shim` `ScopeShim` to report exceptions in
+- Updated `opentelemetry-opentracing-shim` `ScopeShim` to report exceptions in
   opentelemetry specification format, rather than opentracing spec format.
   ([#1878](https://github.com/open-telemetry/opentelemetry-python/pull/1878))
 
@@ -925,7 +925,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added ProxyTracerProvider and ProxyTracer implementations to allow fetching provider
   and tracer instances before a global provider is set up.
   ([#1726](https://github.com/open-telemetry/opentelemetry-python/pull/1726))
-- Added `__contains__` to `opentelementry.trace.span.TraceState`.
+- Added `__contains__` to `opentelemetry.trace.span.TraceState`.
   ([#1773](https://github.com/open-telemetry/opentelemetry-python/pull/1773))
 - `opentelemetry-opentracing-shim` Fix an issue in the shim where a Span was being wrapped
   in a NonRecordingSpan when it wasn't necessary.
@@ -1121,7 +1121,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   ([#1507](https://github.com/open-telemetry/opentelemetry-python/pull/1507))
 - `opentelemetry-exporter-jaeger` Updated Jaeger exporter status code tag
   ([#1488](https://github.com/open-telemetry/opentelemetry-python/pull/1488))
-- `opentelemetry-api` `opentelemety-sdk` Moved `idsgenerator` into sdk
+- `opentelemetry-api` `opentelemetry-sdk` Moved `idsgenerator` into sdk
   ([#1514](https://github.com/open-telemetry/opentelemetry-python/pull/1514))
 - `opentelemetry-sdk` The B3Format propagator has been moved into its own package: `opentelemetry-propagator-b3`
   ([#1513](https://github.com/open-telemetry/opentelemetry-python/pull/1513))

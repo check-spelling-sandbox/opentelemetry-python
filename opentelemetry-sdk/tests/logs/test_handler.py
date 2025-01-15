@@ -60,9 +60,9 @@ class TestLoggingHandler(unittest.TestCase):
 
     # pylint: disable=protected-access
     def test_log_record_emit_noop(self):
-        noop_logger_provder = NoOpLoggerProvider()
+        noop_logger_provider = NoOpLoggerProvider()
         logger_mock = APIGetLogger(
-            __name__, logger_provider=noop_logger_provder
+            __name__, logger_provider=noop_logger_provider
         )
         logger = logging.getLogger(__name__)
         handler_mock = Mock(spec=LoggingHandler)

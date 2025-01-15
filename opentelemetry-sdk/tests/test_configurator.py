@@ -964,7 +964,7 @@ class TestExporterNames(TestCase):
 
 class TestImportExporters(TestCase):
     def test_console_exporters(self):
-        trace_exporters, metric_exporterts, logs_exporters = _import_exporters(
+        trace_exporters, metric_exporters, logs_exporters = _import_exporters(
             ["console"], ["console"], ["console"]
         )
         self.assertEqual(
@@ -974,7 +974,7 @@ class TestImportExporters(TestCase):
             logs_exporters["console"].__class__, ConsoleLogExporter.__class__
         )
         self.assertEqual(
-            metric_exporterts["console"].__class__,
+            metric_exporters["console"].__class__,
             ConsoleMetricExporter.__class__,
         )
 

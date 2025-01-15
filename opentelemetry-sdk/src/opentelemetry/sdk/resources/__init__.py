@@ -396,7 +396,7 @@ class OsResourceDetector(ResourceDetector):
     """Detect os resources based on `Operating System conventions <https://opentelemetry.io/docs/specs/semconv/resource/os/>`_."""
 
     def detect(self) -> "Resource":
-        """Returns a resource with with ``os.type`` and ``os.version``.
+        """Returns a resource with ``os.type`` and ``os.version``.
 
         Python's platform library
         ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -416,7 +416,7 @@ class OsResourceDetector(ResourceDetector):
             '#35~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue May  7 09:00:52 UTC 2'
 
         .. code-block:: python
-            :caption: MacOS
+            :caption: macOS
 
             >>> platform.system()
             'Darwin'

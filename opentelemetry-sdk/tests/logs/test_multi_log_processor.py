@@ -67,7 +67,7 @@ class TestLogRecordProcessor(unittest.TestCase):
         logger = logging.getLogger("test.span.processor")
         logger.addHandler(handler)
 
-        # Test no proessor added
+        # Test no processor added
         with self.assertLogs(level=logging.CRITICAL):
             logger.critical("Odisha, we have another major cyclone")
 

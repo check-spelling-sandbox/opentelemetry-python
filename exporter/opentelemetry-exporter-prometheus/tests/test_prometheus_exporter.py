@@ -266,7 +266,7 @@ class TestPrometheusMetricReader(TestCase):
     def test_invalid_metric(self):
         labels = {"environment": "staging"}
         record = _generate_unsupported_metric(
-            "tesname",
+            "testname_",
             attributes=labels,
             description="testdesc",
             unit="testunit",

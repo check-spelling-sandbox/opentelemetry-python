@@ -34,7 +34,7 @@ response = put(
     ),
     headers={
         "Accept": "application/vnd.github.v3+json",
-        # The token has to be created in Github, and exported to the
+        # The token has to be created in GitHub, and exported to the
         # environment variable below. When creating the token, the resource
         # owner must be open-telemetry, the access must be for the repo above,
         # and read and write permissions must be granted for administration

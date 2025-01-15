@@ -34,12 +34,12 @@ Additional details are available `in the specification
 
 .. code-block:: console
 
-    $ OTEL_RESOURCE_ATTRIBUTES="service.name=shoppingcard,will_be_overridden=foo" python - <<EOF
+    $ OTEL_RESOURCE_ATTRIBUTES="service.name=shoppingcart_,will_be_overridden=foo" python - <<EOF
     import pprint
     from opentelemetry.sdk.resources import Resource
     pprint.pprint(Resource.create({"will_be_overridden": "bar"}).attributes)
     EOF
-    {'service.name': 'shoppingcard',
+    {'service.name': 'shoppingcart_',
     'telemetry.sdk.language': 'python',
     'telemetry.sdk.name': 'opentelemetry',
     'telemetry.sdk.version': '0.13.dev0',
