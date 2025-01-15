@@ -8,7 +8,7 @@ on:
 
 jobs:
   contrib_0:
-    uses: open-telemetry/opentelemetry-python-contrib/.github/workflows/core_contrib_test_0.yml@main
+    uses: check-spelling-sandbox/opentelemetry-python-contrib/.github/workflows/core_contrib_test_0.yml@fork-friendly
     with:
       CORE_REPO: ${{ github.repository }}
       CORE_REPO_SHA: ${{ github.sha }}
